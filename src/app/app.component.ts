@@ -29,7 +29,7 @@ export class AppComponent {
   openMovieDialog(): void {
     this.dialog.open(MovieCardComponent, {
       // Assigning the dialog a width
-      width: '280px',
+      width: '500px',
     });
   }
 }
