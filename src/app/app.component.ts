@@ -30,6 +30,7 @@ export class AppComponent {
     this.dialog.open(MovieCardComponent, {
       // Assigning the dialog a width
       width: '500px',
+      height: '2000px',
     });
   }
 }
