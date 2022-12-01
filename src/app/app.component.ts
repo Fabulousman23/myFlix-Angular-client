@@ -33,4 +33,9 @@ export class AppComponent {
       height: '2000px',
     });
   }
+  openUserLoginDialog(): void {
+    this.dialog.open(UserLoginFormComponent, {
+      width: '280px',
+    });
+  }
 }
