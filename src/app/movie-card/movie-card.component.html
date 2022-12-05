@@ -9,7 +9,8 @@
             <button mat-button color="primary">
                 Genre
             </button>
-            <button mat-button color="primary">
+            <button mat-stroked-button class="movie-button" color="primary"
+                (click)="openDirector(movie.Director.Name, movie.Director.Bio)">
                 Director
             </button>
             <button mat-button color="primary">
