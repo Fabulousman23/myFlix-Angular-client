@@ -12,30 +12,30 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
 export class AppComponent {
   title = 'myFlix-Angular-client';
 
-  //   constructor(public dialog: MatDialog) {}
-  //   // This is the function that will open the dialog when the signup button is clicked
-  //   openUserRegistrationDialog(): void {
-  //     this.dialog.open(UserRegistrationFormComponent, {
-  //       // Assigning the dialog a width
-  //       width: '280px',
-  //     });
-  //   }
-  //   openUserLoginFormComponent(): void {
-  //     this.dialog.open(UserLoginFormComponent, {
-  //       // Assigning the dialog a width
-  //       width: '280px',
-  //     });
-  //   }
-  //   openMovieDialog(): void {
-  //     this.dialog.open(MovieCardComponent, {
-  //       // Assigning the dialog a width
-  //       width: '500px',
-  //       height: '2000px',
-  //     });
-  //   }
-  //   openUserLoginDialog(): void {
-  //     this.dialog.open(UserLoginFormComponent, {
-  //       width: '280px',
-  //     });
-  //   }
+  constructor(public dialog: MatDialog) {}
+  // This is the function that will open the dialog when the signup button is clicked
+  openUserRegistrationDialog(): void {
+    this.dialog.open(UserRegistrationFormComponent, {
+      // Assigning the dialog a width
+      width: '280px',
+    });
+  }
+  openUserLoginFormComponent(): void {
+    this.dialog.open(UserLoginFormComponent, {
+      // Assigning the dialog a width
+      width: '280px',
+    });
+  }
+  openMovieDialog(): void {
+    this.dialog.open(MovieCardComponent, {
+      // Assigning the dialog a width
+      width: '500px',
+      height: '2000px',
+    });
+  }
+  openUserLoginDialog(): void {
+    this.dialog.open(UserLoginFormComponent, {
+      width: '280px',
+    });
+  }
 }

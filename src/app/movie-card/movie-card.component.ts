@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 
+import { GenreComponent } from '../genre/genre.component';
 import { DirectorComponent } from '../director/director.component';
+import { DescriptionComponent } from '../description/description.component';
 
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -35,6 +37,25 @@ export class MovieCardComponent {
       data: {
         Name: name,
         Bio: bio,
+      },
+      width: '450px',
+    });
+  }
+  //opens genre window
+  openGenre(name: string, description: string): void {
+    this.dialog.open(GenreComponent, {
+      data: {
+        Name: name,
+        Description: description,
+      },
+      width: '450px',
+    });
+  }
+  openDescription(title: string, description: string): void {
+    this.dialog.open(DescriptionComponent, {
+      data: {
+        Title: title,
+        Description: description,
       },
       width: '450px',
     });
